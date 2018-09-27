@@ -1,0 +1,15 @@
+{
+	"name": "Skip Intro",
+	"version": "1.0",
+	"description": "Automaticaly skip netflix intro",
+	"permissions": [
+		"tabs"
+	],
+	"content_scripts":[
+		{
+			"matches": ["https://*.netflix.com/*"],
+			"js": ["skip.js"]
+		}
+	],
+	"manifest_version": 2
+}
